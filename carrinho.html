@@ -13,31 +13,57 @@
 <body>
     <!-- Menu Principal -->
     <section class="menu-principal">
-        <div class="menu container">
-            <img id="logo_aposematic" src="./img/logo/logo_3.png" alt="logo" class="logoo reveal6"/>
+      <div class="menu container">
+        <img id="logo_aposematic" src="./img/logo/logo_3.png" alt="log" class="logoo reveal6"/>
 
-            <nav>
-                <ul class="menu-info reveal6">
-                    <li><a href="index.html" class="menu-item">Inicio</a></li>
-                    <li><a href="sobre.html" class="menu-item">Camisetas</a></li>
-                    <li><a href="casacos.html" class="menu-item">Jaquetas e Casacos</a></li>
-                </ul>
-            </nav>
+        <nav>
+          <ul class="menu-info reveal6">
+            <li><a href="index.html" class="menu-item ">Inicio</a></li>
+            <li><a href="camisetas.html" class="menu-item ">Camisetas</a></li>
+            <li><a href="casacos.html" class="menu-item ">Jaquetas e Casacos</a></li>
+            
+          </ul>
+        </nav>
 
-            <div class="logincadastro reveal6">
-                <button class="button" onclick="window.location.href = 'login.html'">Login</button>
-                <button class="button" onclick="window.location.href = 'form.html'">Cadastro</button>
-            </div>
 
-            <div class="menu-car reveal6">
-                <div class="menu-carrinho">
-                    <span class="carrinho-badge">0</span>
-                    <img src="/img/icon/carrinho.svg" alt="Seu carrinho">
-                </div>
-            </div>
+        
+
+       <div class="logincadastro reveal6">
+        <button class="button" onclick="window.location.href = 'login.html'">Login</button>
+        <button class="button" onclick="window.location.href = 'form.html'">Cadastro</button>
+       </div>
+
+       <div class="menu-car reveal6">
+          <div class="menu-carrinho">
+            <span class="carrinho-badge">0</span>
+            <img src="/img/icon/carrinho.svg" onclick="window.location.href = 'carrinho.html'" alt="Seu carrinho">
+          </div>
         </div>
-    </section>
 
+        <div class="mobile-menu-icon reveal6">
+          <button class="mobile-menu-icon-button">
+            <img src="./img/icon/menu3.svg" alt="" class="icon" />
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu-close">
+          <button class="mobile-menu-close-btn">X</button>
+        </div>
+        <ul class="menu-info">
+          <li><a href="index.html" class="menu-item">Inicio</a></li>
+          <li><a href="camisetas.html" class="menu-item">Camisetas</a></li>
+          <li><a href="casacos.html" class="menu-item">Casacos</a></li>
+          
+        </ul>
+
+        <button class="button" onclick="window.location.href = 'fazerpedido.html'">Login/Cadastro</button>
+        <div>
+        
+      </div>
+      </div>
+    </section>  
     <!-- Conteúdo do Carrinho -->
     <div class="carrinho-container">
         <h1>Seu Carrinho</h1>

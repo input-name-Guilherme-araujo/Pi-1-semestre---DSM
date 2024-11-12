@@ -442,40 +442,15 @@ body {
     margin-right: 10px;
 }
 
-/* Borda SVG do banner */
-.custom-shape-divider-bottom-1709056755 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    
+.content {
+    display: none;
 }
 
-.custom-shape-divider-bottom-1709056755 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 78px;
-    
+.content.show {
+    display: flex;
 }
 
-.custom-shape-divider-bottom-1709056755 .shape-fill {
-    fill: #1b1b1b;    
-    
-}
 
-.form-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Informações como as camisetas sao feitas */
 .info-roup {
     padding-top: 50px;
     background: url(/img/wallpapers/wallp4.jfif) center;
@@ -735,44 +710,6 @@ body {
 }
 
 
-/* possivel card- item
-.card-item {
-    box-sizing: border-box;
-    width: 190px;
-    height: 254px;
-    background: rgba(217, 217, 217, 0.58);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-  }
-  
-  .card-item:hover {
-    border: 1px solid black;
-    transform: scale(1.05);
-  }
-  
-  .card-item:active {
-    transform: scale(0.95) rotateZ(1.7deg);
-  }
- */
-
-
-.text {
-    color: white;
-}
-
-/* Informações do site, formas de contato, selos de segurança e  formas de pagamento*/
-
 .infos-site {
     display: flex;
     justify-content: space-between;
@@ -854,20 +791,6 @@ footer a {
     color: #00ff00;
 }
 
-
-
-
-
-.logo-wpp {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 80px;
-    height: 80px;
-    z-index: 1000;
-}
-
-/* Responsividade */
 
 @media screen and (max-width: 1100px) {
     .banner .banner-message {
@@ -1055,11 +978,7 @@ footer a {
         
     }
 
-    .testimonial::before {
-        font-size: 170px;
-        top: -40px;
-        left: -70px;
-    }
+    
 
     .slider {
         height: 520px;
@@ -1110,9 +1029,7 @@ footer a {
         font-size: 30px;
     }
 
-    .testimonial::before {
-        content: "";
-    }
+   
 }
 
 @media screen and (max-width: 370px) {
