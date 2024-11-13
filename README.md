@@ -77,12 +77,12 @@ Linguagens, Frameworks e API's:
 
 ## ✒️ Autores
 
-* **[Guilherme de Araujo Silva](https://github.com/input-name-Guilherme-araujo)** - *Idéia Central; Criação da página Index; Criação da pagina carrinho; Elaboração e Criação do Design do Site; Documentação do projeto ;*
+* **[Guilherme de Araujo Silva](https://github.com/input-name-Guilherme-araujo)** - *Idéia Central; Criação da página Index; Criação da pagina carrinho; Criação da pagina camisetas; Elaboração e Criação do Design do Site; Documentação do projeto ;*
 * **[Nome](link_github)** - *Crianção da pagina de devolução;  Elaboração e Criação do Design;*
 * **[Nome](link_github)** - *Criação das páginas: Jaquetas e blusas, Login e Cadastrar;*
 
 
-
+git
 ## 🎁 Expressões de gratidão
 
 * Agradecemos a todos os professores que nos ministraram o curso durante o primeiro semestre, especialmente aos professores que nos ministraram as disciplinas fundamentais para o desenvolvimento desse projeto: 
