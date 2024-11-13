@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Devoluções</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/devolucao.css">
+    
+</head>
+<body>
+
+    <section class="menu-principal">
+        <div class="menu container">
+          <img id="logo_aposematic" src="./img/logo/logo_3.png" alt="log" class="logoo reveal6"/>
+  
+          <nav>
+            <ul class="menu-info reveal6">
+              <li><a href="index.html" class="menu-item ">Inicio</a></li>
+              <li><a href="camisetas.html" class="menu-item ">Camisetas</a></li>
+              <li><a href="casacos.html" class="menu-item ">Jaquetas e Casacos</a></li>
+              
+            </ul>
+          </nav>
+  
+  
+          
+  
+         <div class="logincadastro reveal6">
+          <button class="button" onclick="window.location.href = 'login.html'">Login</button>
+          <button class="button" onclick="window.location.href = 'form.html'">Cadastro</button>
+         </div>
+  
+         <div class="menu-car reveal6">
+            <div class="menu-carrinho">
+              <span class="carrinho-badge">0</span>
+              <img src="/img/icon/carrinho.svg" onclick="window.location.href = 'carrinho.html'" alt="Seu carrinho">
+            </div>
+          </div>
+  
+          <div class="mobile-menu-icon reveal6">
+            <button class="mobile-menu-icon-button">
+              <img src="./img/icon/menu3.svg" alt="" class="icon" />
+            </button>
+          </div>
+        </div>
+  
+        <div class="mobile-menu">
+          <div class="mobile-menu-close">
+            <button class="mobile-menu-close-btn">X</button>
+          </div>
+          <ul class="menu-info">
+            <li><a href="index.html" class="menu-item">Inicio</a></li>
+            <li><a href="camisetas.html" class="menu-item">Camisetas</a></li>
+            <li><a href="casacos.html" class="menu-item">Casacos</a></li>
+            
+          </ul>
+  
+          <button class="button" onclick="window.location.href = 'fazerpedido.html'">Login/Cadastro</button>
+          <div>
+          
+        </div>
+        </div>
+      </section>
+  
+      <div class="overlay hidden"></div>
+  
+      
+      <section class="info-devolucao">
+        <div class="devo-policy">
+            <h1>Política de Trocas e Devoluções</h1>
+            <p> Solicite sua troca e devolução imediatamente com o sistema de trocas APOSEMATIC. Para registrar sua
+                solicitação, role até o fim da pagina.
+
+                Caso os produtos da Aposematic não estejam de acordo com o solicitado, você terá o prazo de até 7
+                dias corridos a partir do recebimento para realizar a devolução da compra. Vale ressaltar que toda a
+                mercadoria devolvida deve retornar nas exatas condições em que foi entregue, com todos os
+                acessórios, manuais e itens que compõem o produto. As caixas também devem estar preservadas,
+                assim como foram entregues.
+            </p>
+        </div>
+        <div class="devo-policy">
+            <h1>Produto com defeito:</h1>
+            <p>Se o seu produto for entregue com defeito de fábrica, você poderá solicitar a troca ou devolução do produto através deste sistema e registrar sua solicitação: role até o fim da página. Neste caso, você terá até sete dias corridos a partir do recebimento para a solicitação da devolução do mesmo.
+                Vale ressaltar que a Aposematic não efetuará a troca nas seguintes situações:
+                
+                Desgaste por uso ou lavagem;
+                Indicações de uso do produto;
+                Dano acidental ou provocado;
+                Lavagem inadequada do produto. (Se têxtil)</p>
+        </div>
+        <div class="devo-policy">
+            <h1>Arrependimento ou desistência:</h1>
+            <p>Caso receba o produto e opte pela desistência da compra, você poderá exigir a devolução e restituição
+                do valor, de acordo com o Art. 49 do Código de Defesa do Consumidor. Conforme prescrito nesse
+                artigo, você terá a opção de devolver a mercadoria no prazo de até 07 dias corridos a partir do
+                recebimento do produto.
+                Lembrando que a caixa precisa estar em ótima qualidade, na embalagem original, sem qualquer
+                resquício de uso, juntamente à nota fiscal, manual e todos os itens restantes inclusos no produto. Role
+                até o fim da página.
+            </p>
+        </div>
+        <div class="devo-policy">
+            <h1>Quando recusar o produto?</h1>
+            <p>Todos os produtos da Aposematic são enviados conforme o fabricante, não possuindo nenhum
+                extravio na hora da postagem. Caso alguma das ações abaixo tenha acontecido com você, entre em
+                contato com a gente no (47) 99260-9398 e recuse o produto na hora da entrega.
+            
+            
+                Falta de itens inclusos na caixa;
+                Produto extraviado;
+                Caixa amassada ou avariada;
+                Produto em desconformidade com o pedido feito.
+                    Preencha o formulario</p>
+        </div>
+        
+      </section>
+
+      <div class="container-devo">
+        <h1 class="h1-devo">Gerenciamento de Devoluções</h1>
+    
+        <!-- Seção de Solicitação de Devolução -->
+        <div class="form-group-devo">
+            <label for="order-id">ID do Pedido</label>
+            <input type="text" id="order-id" placeholder="Insira o ID do pedido">
+        </div>
+    
+        <div class="form-group-devo">
+            <label for="reason">Motivo da Devolução</label>
+            <select id="reason">
+                <option value="defeito">Produto com Defeito</option>
+                <option value="tamanho">Tamanho Incorreto</option>
+                <option value="insatisfacao">Insatisfação</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+    
+        <!-- Seção de Envio de Imagem -->
+        <div class="input-image-devo">
+            <label class="send-img" for="product-image">Imagem do Produto</label>
+            <input type="file" id="product-image" accept="image/*">
+        </div>
+    
+        <!-- Seção de Opções de Reembolso -->
+        <div class="reembolso-container-devo">
+            <label><strong>Escolha a opção de reembolso:</strong></label>
+    
+            <div class="reembolso-option-devo">
+                <input type="radio" id="reembolso-direto" name="reembolso" value="direto" checked>
+                <label for="reembolso-direto">Reembolso Direto</label>
+            </div>
+    
+            <div class="reembolso-option-devo">
+                <input type="radio" id="credito-futuro" name="reembolso" value="credito">
+                <label for="credito-futuro">Crédito para Futuras Compras</label>
+            </div>
+        </div>
+    
+        <!-- Botão para Solicitar Devolução -->
+        <div class="form-group-devo">
+            <button onclick="iniciarDevolucao()">Solicitar Devolução</button>
+        </div>
+    
+        <!-- Botão para WhatsApp -->
+        <div class="form-group-devo">
+            <button class="whatsapp-button-devo" onclick="abrirWhatsApp()">Entrar em Contato via WhatsApp</button>
+        </div>
+    </div>
+    
+    <script>
+        function iniciarDevolucao() {
+            const orderId = document.getElementById('order-id').value;
+            const reason = document.getElementById('reason').value;
+            const reembolso = document.querySelector('input[name="reembolso"]:checked').value;
+            const productImage = document.getElementById('product-image').files[0];
+    
+            // Validação de Condições de Devolução
+            if (!orderId) {
+                alert("Por favor, insira o ID do pedido.");
+                return;
+            }
+    
+            if (!productImage) {
+                alert("Por favor, envie uma imagem do produto.");
+                return;
+            }
+    
+            // Simulação de prazo de devolução e condições
+            const dataRecebimento = new Date();
+            dataRecebimento.setDate(dataRecebimento.getDate() - 5); // Simulando um pedido de 5 dias atrás
+            const hoje = new Date();
+            const prazoDevolucao = new Date(dataRecebimento);
+            prazoDevolucao.setDate(prazoDevolucao.getDate() + 7);
+    
+            if (hoje > prazoDevolucao) {
+                alert("Prazo de devolução expirado.");
+                return;
+            }
+    
+            // Registrar Solicitação de Devolução
+            const numeroProtocolo = Math.floor(Math.random() * 1000000);
+            alert(`Solicitação de devolução criada com sucesso! Número de protocolo: ${numeroProtocolo}.\nOpção de reembolso escolhida: ${reembolso}\n\nSeu produto será encaminhado para um especialista, mas se precisar sanar suas dúvidas, entre em contato conosco. Prezamos a confiança acima de tudo e não queremos deixar você sem as respostas que precisa!`);
+    
+            // Exibir a imagem do produto enviada
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                alert("Imagem enviada com sucesso!");
+                console.log("Imagem enviada:", e.target.result); // Aqui você pode simular o envio para o servidor ou armazená-la
+            };
+            reader.readAsDataURL(productImage);
+        }
+    
+        // Função para abrir o WhatsApp
+        function abrirWhatsApp() {
+            const numeroWhatsApp = "5511999999999"; // Substitua pelo número de WhatsApp da loja
+            const mensagem = "Olá, gostaria de saber mais sobre o processo de devolução.";
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>
