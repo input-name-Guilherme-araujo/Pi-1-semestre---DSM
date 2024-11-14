@@ -76,12 +76,22 @@ h1-devo {
     display: flex;
     flex-direction: column;
     width: 400px;
+    margin-left: 20px;
     
 }
 
 .devo-policy {
     align-items: center;
     border: 1px solid red;
+}
+.devo-policy h1 {
+    align-items: center;
+    color: #33b151;
+    
+}
+.devo-policy p {
+    align-items: center;
+    color: #b0dfaf;
 }
 
 

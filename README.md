@@ -9,37 +9,80 @@ O site apresenta as seguintes páginas, com as seguintes funções:
 * Camisetas (nessa pagina há 3 banners um para cada slider card, apontando o tipo de camiseta que se encontra no mesmo,  contendo camisetas oversized, camisetas lisas, camisetas regulares, e no rodapé as informações relevantes ao cliente)
 * Jaquetas e casacos (Uma pagina que contém um banner apresentando o produto com outro slider card que contém desta vez jaquetas e casacos)
 * Login (Nessa página será permitido que o usuário entre em sua área, caso ele informe o email e senha corretos) - Essa página ainda não está em funcionamento, pois ainda não foi implementado o Banco de Dados;
-* Cadastrar-se (Nessa página será permitindo que o usuário se cadastre no site e seja redirecionado para a sua área, caso ele informe os seguintes dados: Email, Nome, Telefone e Celular, Endereço [Verificação de CEP] e Senha) - Essa página ainda não está em  funcionamento, pois ainda não foi implementado o Banco de Dados;
+* Cadastrar-se (Nessa página será permitindo que o usuário se cadastre no site e seja redirecionado para a sua área, caso ele informe os seguintes dados: Email, Nome, Telefone e Celular, Endereço  e Senha) - Essa página ainda não está em  funcionamento, pois ainda não foi implementado o Banco de Dados;
 * Carrinho (Uma pagina de carrinho, podendo guardar informações mesmo que troque de pagina, dentro dela é possivel aplicar codigos de desconto,  valores acima de R$ 290,00 recebem frete gratis) -  essa pagina é apenas uma simulação, pois nao foi implementado o banco de dados
 
 * Politica de devolução (Nessa pagina é possivel solicitar reembolso/devolução do produto, e contendo informações sobre as politicas de devolução) - pagina não foi finalizada, pois não encontramos uma forma melhor de fazer
 <br>
 
-## 🚀 [Link do Site] ()
+## 🚀 [Link do Site] (link)
 
 
 ## 🏆 Figma do Projeto
-### 🥇 [Alta Fidelidade]()
-### 🥈 [Baixa Fidelidade]()
+### 🥇 [Alta Fidelidade](link)
+### 🥈 [Baixa Fidelidade](link)
 
 <br>
 
-## 📒 [Documentação do Projeto]()
+## 📒 [Documentação do Projeto](https://drive.google.com/uc?export=download&id=1FC71i78M9NFkgWtkieoKBNCmsUZV-d8I)
 
 ## 📦 Aparência
 
 ### Página Inicial
 
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+
+### Fazer Pedido
+
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
 
 ### Camisetas
 
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+
 ### Jaquetas e Casacos
+
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
 
 ###  Login e Cadastro
 
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+
 ### Carrinho
 
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+
 ### Politica de devolução 
+
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
 
 
 ## 📃 Obter cópia
@@ -82,7 +125,7 @@ Linguagens, Frameworks e API's:
 * **[Nome](link_github)** - *Criação das páginas: Jaquetas e blusas, Login e Cadastrar;*
 
 
-git
+
 ## 🎁 Expressões de gratidão
 
 * Agradecemos a todos os professores que nos ministraram o curso durante o primeiro semestre, especialmente aos professores que nos ministraram as disciplinas fundamentais para o desenvolvimento desse projeto: 
@@ -91,5 +134,5 @@ git
 - **Prof. Erick** - Design Digital 
 
 ---
-Esse site foi desenvolvido no incío de nossa carreira, por isso temos orgulho desse projeto, por mais que nosso codigo seja bem iniciante devido ao fato de ser nosso primeiro contato com desenvolvimento, projeto sera atualizado diariamente e aos poucos se torne cada vez melhor.
+Esse site foi desenvolvido no incío de nossa carreira, por isso temos orgulho desse projeto, por mais que nosso codigo seja bem iniciante devido ao fato de ser nosso primeiro contato com desenvolvimento, o projeto sera atualizado diariamente para que aos poucos se torne cada vez melhor.
 Agora pra você que leu ate aqui espero que algo te ajude em algum projeto, abraço! 😄🤙
