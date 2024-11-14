@@ -15,7 +15,7 @@ O site apresenta as seguintes páginas, com as seguintes funções:
 * Politica de devolução (Nessa pagina é possivel solicitar reembolso/devolução do produto, e contendo informações sobre as politicas de devolução) - pagina não foi finalizada, pois não encontramos uma forma melhor de fazer
 <br>
 
-## 🚀 [Link do Site] (link)
+## 🚀 [Link do Site] (Estou tendo problemas com o github pages coloco assim que conseguir resolver 👷🚧👷)
 
 
 ## 🏆 Figma do Projeto
