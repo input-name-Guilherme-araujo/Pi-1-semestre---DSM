@@ -71,7 +71,7 @@ h1-devo {
 
 
 .info-devolucao {
-    border: 1px solid red;
+    
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ h1-devo {
 
 .devo-policy {
     align-items: center;
-    border: 1px solid red;
+    
 }
 .devo-policy h1 {
     align-items: center;

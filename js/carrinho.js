@@ -51,6 +51,7 @@ const cuponsValidos = {
 // Limite para frete grátis
 const FRETE_GRATIS_LIMITE = 290.00;
 
+// Gerenciamento do carrinho
 const CarrinhoManager = {
     // Obtém os itens do carrinho do localStorage
     getItems() {
@@ -139,26 +140,16 @@ const CarrinhoManager = {
         return precoBase * item.quantidade;
     },
 
-    // Calcula o frete com base no total do carrinho
-    calcularFrete() {
-        const total = this.calcularTotal();
-        if (total > FRETE_GRATIS_LIMITE) {
-            return "Frete Grátis";
-        } else {
-            return 20.00; // Valor do frete padrão
-        }
-    },
-
     // Calcula o total do carrinho
     calcularTotal() {
         const items = this.getItems();
         let total = items.reduce((sum, item) => sum + this.calcularPrecoItem(item), 0);
         const cupomAplicado = this.getCupomAplicado();
-
+        
         if (cupomAplicado) {
             total = total * (1 - cupomAplicado.desconto / 100);
         }
-
+        
         return total;
     },
 
@@ -174,7 +165,7 @@ const CarrinhoManager = {
         const total = this.calcularTotal();
         const economia = this.calcularEconomia();
         const cupomAplicado = this.getCupomAplicado();
-
+        
         let mensagem = `Pedido finalizado com sucesso!\n`;
         mensagem += `Total: ${this.formatarPreco(total)}\n`;
         if (economia > 0) {
@@ -215,14 +206,21 @@ const CarrinhoManager = {
     renderizarCarrinho() {
         const containerProdutos = document.querySelector('.produtos-carrinho');
         const containerResumo = document.querySelector('.menu-compra-conteudo');
-
-        if (!containerProdutos || !containerResumo) return;
-
+        
+        if (!containerProdutos || !containerResumo) return; // Não estamos na página do carrinho
+        
         const items = this.getItems();
-        const total = this.calcularTotal();
-        const frete = this.calcularFrete();
-        const cupomAplicado = this.getCupomAplicado();
-        const economia = this.calcularEconomia();
+        
+        if (items.length === 0) {
+            containerProdutos.innerHTML = `
+                <div class="carrinho-vazio">
+                    <h2>Seu carrinho está vazio</h2>
+                    <p>Continue comprando para adicionar produtos</p>
+                </div>
+            `;
+            containerResumo.innerHTML = '';
+            return;
+        }
 
         containerProdutos.innerHTML = items.map(item => `
             <div class="item-carrinho">
@@ -251,7 +249,17 @@ const CarrinhoManager = {
             </div>
         `).join('');
 
+        const cupomAplicado = this.getCupomAplicado();
+        const economia = this.calcularEconomia();
+        const total = this.calcularTotal();
+        const frete = this.calcularFrete();
+
         containerResumo.innerHTML = `
+            <div class="cupom-container">
+                <input type="text" class="cupom-input" placeholder="Digite seu cupom de desconto">
+                <button class="btn-cupom" onclick="CarrinhoManager.aplicarCupomFromInput()">Aplicar Cupom</button>
+            </div>
+            
             <div class="resumo-compra">
                 <div class="resumo-item">
                     <span>Subtotal</span>
@@ -277,18 +285,48 @@ const CarrinhoManager = {
                     </div>
                 ` : ''}
             </div>
+            
             <button class="btn-finalizar" onclick="CarrinhoManager.finalizarCompra()">
                 Finalizar Compra
             </button>
         `;
     },
 
+    // Função auxiliar para pegar o valor do input de cupom e aplicá-lo
+    aplicarCupomFromInput() {
+        const input = document.querySelector('.cupom-input');
+        if (input) {
+            this.aplicarCupom(input.value);
+            input.value = '';
+        }
+    },
+
+    // Calcula o frete com base no total do carrinho
+    calcularFrete() {
+        const total = this.calcularTotal();
+        if (total >= FRETE_GRATIS_LIMITE) {
+            return "Frete Grátis";
+        } else {
+            return 20.00; // Valor do frete padrão
+        }
+    },
+
     // Inicializa o carrinho
     init() {
-        this.renderizarCarrinho();
         this.atualizarBadgeCarrinho();
+        this.renderizarCarrinho();
+        
+        // Adiciona listeners para botões de compra
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('btn-comprar')) {
+                const produtoId = parseInt(e.target.dataset.produtoId);
+                if (produtoId) {
+                    this.adicionarItem(produtoId);
+                }
+            }
+        });
     }
 };
 
-// Inicializa o carrinho ao carregar a página
+// Inicializa o carrinho quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', () => CarrinhoManager.init());

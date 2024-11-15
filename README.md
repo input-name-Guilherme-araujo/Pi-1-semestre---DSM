@@ -19,8 +19,8 @@ O site apresenta as seguintes páginas, com as seguintes funções:
 
 
 ## 🏆 Figma do Projeto
-### 🥇 [Alta Fidelidade](link)
-### 🥈 [Baixa Fidelidade](link)
+### 🥇 [Alta Fidelidade](link 👷🚧👷)
+### 🥈 [Baixa Fidelidade](link 👷🚧👷)
 
 <br>
 
