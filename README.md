@@ -122,7 +122,7 @@ Linguagens, Frameworks e API's:
 ## ✒️ Autores
 * **[André Coral Rodrigues](https://github.com/o0darkness0o)** - *Crianção da pagina de devolução;  Elaboração e Criação do Design Figma;*
 * **[Guilherme de Araujo Silva](https://github.com/input-name-Guilherme-araujo)** - *Idéia Central; Criação da página Index; Criação da pagina carrinho; Criação da pagina camisetas; Elaboração e Criação do Design do Site; Documentação do projeto ;*
-* **[Espedito Duarte Gonçalves Maia](link_github)** - *Criação das páginas: Jaquetas e blusas, Login e Cadastrar;*
+* **[Espedito Duarte Gonçalves Maia](https://github.com/duarte-maia)** - *Criação das páginas: Jaquetas e blusas, Login e Cadastrar;*
 
 
 
