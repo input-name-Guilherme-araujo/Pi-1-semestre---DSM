@@ -167,19 +167,47 @@ const CarrinhoManager = {
         const cupomAplicado = this.getCupomAplicado();
         
         let mensagem = `Pedido finalizado com sucesso!\n`;
-        mensagem += `Total: ${this.formatarPreco(total)}\n`;
+    
+        // Adicionando os detalhes dos itens no carrinho
+        const items = this.getItems(); // Supondo que a função getItems() retorne os itens do carrinho
+        items.forEach(item => {
+            mensagem += `\nItem: ${item.nome}\n`;
+            mensagem += `ID: ${item.id}\n`;
+            mensagem += `Preço: ${this.formatarPreco(item.preco)}\n`;
+            if (item.precoPromocional) {
+                mensagem += `Preço Promocional: ${this.formatarPreco(item.precoPromocional)}\n`;
+            }
+            mensagem += `Promoção: ${item.temPromocao ? "Sim" : "Não"}\n`;
+        });
+    
+        // Adicionando o total e a economia
+        mensagem += `\nTotal: ${this.formatarPreco(total)}\n`;
+        
         if (economia > 0) {
             mensagem += `Você economizou: ${this.formatarPreco(economia)}\n`;
         }
+        
         if (cupomAplicado) {
             mensagem += `Cupom aplicado: ${cupomAplicado.codigo}\n`;
         }
-        
+    
+        // Exibindo a mensagem no alert
         alert(mensagem);
+    
+        // Limpando o carrinho e dados do cupom
         localStorage.removeItem('carrinhoItems');
         localStorage.removeItem('cupomAplicado');
         this.renderizarCarrinho();
         this.atualizarBadgeCarrinho();
+    
+        // Codificando a mensagem para ser passada no link do WhatsApp
+        let mensagemFormatada = encodeURIComponent(mensagem);
+        
+        // Construindo o link com a URI de compartilhamento do WhatsApp
+        let linkWhatsApp = `https://wa.me/5516988753083?text=${mensagemFormatada}`;
+    
+        // Abrindo o link no navegador
+        window.open(linkWhatsApp, "_blank");
     },
 
     // Formata o preço para exibição

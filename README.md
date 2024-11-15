@@ -111,8 +111,8 @@ Ferramentas:
 
 Linguagens, Frameworks e API's:
 * Bootstrap- O framework web usado;
-* Swiper - framework JavaScript
-* ScrollReveal - framework de JavaScript
+* Swiper - Biblioteca JavaScript
+* ScrollReveal - Biblioteca JavaScript
 * HTML5 - Linguagem de Marcação;
 * Java Script - Linguagem de Programação
 * CSS - Linguagem Web de Formatação;
