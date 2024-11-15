@@ -322,7 +322,7 @@ body {
 /* Banner */
 
 .banner {
-    background:url(/img/wallpapers/wallp4.png);
+    background:url('/img/wallpapers/wallp4.png');
     /* width: 100vw; */
     position: relative;
     display: flex;
