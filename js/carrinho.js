@@ -3,7 +3,7 @@ const catalogoProdutos = {
         id: 1,
         nome: "Camiseta Trio F1 oversized",
         preco: 89.90,
-        imagem: "/img/camisetas/aposi-f1.png",
+        imagem: "./img/camisetas/aposi-f1.png",
         precoPromocional: null,
         temPromocao: false
     },
@@ -11,7 +11,7 @@ const catalogoProdutos = {
         id: 2,
         nome: "Camiseta Duende Aposimatic oversized",
         preco: 89.90,
-        imagem: "/img/camisetas/cami1.png",
+        imagem: "./img/camisetas/cami1.png",
         precoPromocional: null,
         temPromocao: false
     },
@@ -19,7 +19,7 @@ const catalogoProdutos = {
         id: 3,
         nome: "Camiseta Aposimatic oversized",
         preco: 89.90,
-        imagem: "/img/camisetas/Aposimatic.png",
+        imagem: "./img/camisetas/Aposimatic.png",
         precoPromocional: null,
         temPromocao: false
     },
@@ -27,7 +27,7 @@ const catalogoProdutos = {
         id: 4,
         nome: "Camiseta Just Relaxxx oversized",
         preco: 89.90,
-        imagem: "/img/camisetas/just_relax.png",
+        imagem: "./img/camisetas/just_relax.png",
         precoPromocional: null,
         temPromocao: false
     },
@@ -35,7 +35,7 @@ const catalogoProdutos = {
         id: 5,
         nome: "Camiseta Necromancy Aposimatic oversized",
         preco: 89.90,
-        imagem: "/img/camisetas/necromancy-aposimatic.png",
+        imagem: "./img/camisetas/necromancy-aposimatic.png",
         precoPromocional: null,
         temPromocao: false
     }
