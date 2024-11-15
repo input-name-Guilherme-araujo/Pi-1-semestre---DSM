@@ -322,7 +322,7 @@ body {
 /* Banner */
 
 .banner {
-    background:url(./img/wallpapers/wallp4.jfif);
+    background:url(/img/wallpapers/wallp4.png);
     /* width: 100vw; */
     position: relative;
     display: flex;
@@ -478,7 +478,7 @@ body {
 /* Informações como as camisetas sao feitas */
 .info-roup {
     padding-top: 50px;
-    background: url(./img/wallpapers/wallp4.jfif) center;
+    background: url(/img/wallpapers/wallp4.png) center;
 }
 
 
