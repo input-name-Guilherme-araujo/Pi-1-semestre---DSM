@@ -204,7 +204,7 @@ const CarrinhoManager = {
         let mensagemFormatada = encodeURIComponent(mensagem);
         
         // Construindo o link com a URI de compartilhamento do WhatsApp
-        let linkWhatsApp = `https://wa.me/5516988753083?text=${mensagemFormatada}`;
+        let linkWhatsApp = `https://wa.me/5516993877322?text=${mensagemFormatada}`;
     
         // Abrindo o link no navegador
         window.open(linkWhatsApp, "_blank");
