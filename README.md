@@ -31,23 +31,12 @@ O site apresenta as seguintes páginas, com as seguintes funções:
 
 ### Página Inicial
 
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="/img/prints-pag/pag-index.png">
 
-### Fazer Pedido
-
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
 
 ### Camisetas
 
-<img src="">
+<img src="/img/prints-pag/pag-camisetas.png">
 <img src="">
 <img src="">
 <img src="">
@@ -55,35 +44,24 @@ O site apresenta as seguintes páginas, com as seguintes funções:
 
 ### Jaquetas e Casacos
 
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="/img/prints-pag/pag-blusa.png">
+
 
 ###  Login e Cadastro
 
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="/img/prints-pag/pag-login.png">
+<img src="/img/prints-pag/pag-cadastro.png">
+
 
 ### Carrinho
 
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="/img/prints-pag/pag-carrinho.png">
+
 
 ### Politica de devolução 
 
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="/img/prints-pag/pag-devoluções.png">
+
 
 
 ## 📃 Obter cópia
