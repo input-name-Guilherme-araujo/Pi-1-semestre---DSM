@@ -37,10 +37,7 @@ O site apresenta as seguintes páginas, com as seguintes funções:
 ### Camisetas
 
 <img src="/img/prints-pag/pag-camisetas.png">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+
 
 ### Jaquetas e Casacos
 
